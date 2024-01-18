@@ -1,4 +1,4 @@
-use std::io::{self, ErrorKind, Read, Write};
+use std::io::{ErrorKind, Read, Write};
 use std::net::{TcpListener, TcpStream};
 use std::sync::mpsc::channel;
 use std::{thread, vec};
@@ -60,8 +60,7 @@ fn main() {
                 })
                 .collect::<Vec<_>>();
         }
-        
+
         sleep();
     }
-
 }
